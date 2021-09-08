@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'EB Garamond', serif; */
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-size: 14px;
+    line-height: 22px;
+}
+.mainframe{
+    margin: 30px auto;
+    width: 800px;
+    border: 1px solid #003147;
+    border-radius: 2%;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px black;
+}
+.bold{
+    font-weight: 800;
+    font-size: 22px;
+}
+.semibold{
+    font-weight: 600;
+    font-size: 16px;
+}
+.left-container{
+    width: 282px;
+    border: 1px solid #003147;
+    background-color: #003147;
+}
+.left-container .profile{
+    width: 100%;
+    height: auto;
+}
+.left-container .profile img{
+    background-color: whitesmoke;
+    margin: 10px auto;
+    border: 1px solid #003147;
+    border-radius: 50%;
+    justify-self: center;
+}
+.left-container .contant{
+    margin: 0 25px;
+}  
+.left-container .item{
+    padding: 25px 0px;
+    border-bottom: 1px solid whitesmoke;
+}
+.left-container .item:last-child{
+    border-bottom: 0;
+}
+.left-container .bold, a{
+    color: whitesmoke;
+    ;
+}
+.left-container .title{
+    margin-bottom: 20px;
+}
+.left-container .semibold{
+    color: whitesmoke;
+}
+.left-container .regular{
+    padding: 0 0;
+    margin: 0 0;
+    color: whitesmoke;
+}
+.left-container .item ul li{
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.left-container .item ul li:last-child{
+    margin-bottom: 0px;
+}
+.left-container .icon{
+    height: 35px;
+    width: 35px;
+    background: #fff;
+    color: #003147;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 25px;
+    position: relative;
+}
+.left-container i{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.left-container .data{
+    color: whitesmoke;
+}
+.left-container .skills{
+    color: whitesmoke;
+}
+.left-container .skills li{
+    justify-content: space-between;
+}
+.left-container .skills li .skill-name{
+    width:30%;
+}
+.left-container .skills li .skill-progress{
+    width:50%;
+    border: 1px solid whitesmoke;
+    height: 10px;
+    position: relative;
+}
+.left-container .skills li .skill-progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: whitesmoke;
+}
+/* .left-container fiished */
+
+
+
+
+
+/* right.container start */
+.right-container{
+    margin: 0px 20px;
+}
+.right-container .item{
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #003147;
+}
+.right-container .item:last-child{
+    border: none;
+}
+.right-container .item .title{
+    color: #003147;
+    margin-bottom:20px ;
+}
+.right-container .date{
+    
+    font-weight: 600;
+    font-size: 16px;
+
+}
+.right-container .info{
+    padding: 20px 0;
+
+}
+.right-container .education ul li, .right-container .workex ul li{
+    padding-left:30px;
+    position:relative;
+    overflow: hidden;
+}
+.right-container .education ul li:before,.right-container .workex ul li:before
+{
+    content:"";
+    position:absolute;
+    height: 8px;
+    width: 8px;
+    color: #003147;
+    top:0px;
+    left:0px;
+    border: 2px solid #003147;
+    border-radius: 50%;
+
+}
+.right-container .education ul li:after,.right-container .workex ul li:after{
+    content:"";
+    position:absolute;
+    height: 130px;
+    width: 2px;
+    color: #003147;
+    top:12px;
+    left: 5px;
+    background: #003147;
+}
+.right-container .hobby ul{
+    display: flex;
+    justify-content: space-between;
+}
+.right-container .hobby ul li{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border: 2px solid #003147;
+    border-radius: 50%;
+}
+.right-container .hobby ul li i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #003147;
+    font-size: 25px;
+}
+.right-container .hobby ul li:before{
+    content:"";
+    height: 2px;
+    width: 94px;
+    background: #003147;
+    position: absolute;
+    top: 20px;
+    left: 46px;
+}
+.right-container .hobby ul li:last-child:before{
+    display: none;
+}
+
